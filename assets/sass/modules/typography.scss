@@ -29,7 +29,7 @@
 
     // Nesting level 2
     .section > .section {
-	break-after: avoid;
+	break-after: auto;
 	.title {
 	    font-size: 2.178em;
 	    font-weight: normal;
@@ -54,7 +54,7 @@
 
     // Nesting level 3
     .section > .section > .section {
-	break-after: avoid;
+	break-after: auto;
 	.title {
 	    font-size: 1.68em;
 	    font-weight: normal;
@@ -80,7 +80,7 @@
 
     // Nesting level 4
     .section > .section > .section > .section {
-	break-after: avoid;
+	break-after: auto;
 	.title {
 	    font-size: 1.2961em;
 	    font-weight: normal;
