@@ -9,6 +9,12 @@
 	font-size: 48px;
 	line-height: 52px;
     }
+    .title::before {
+	content: url(darktable-logo.svg);
+	display: block;
+	transform: scale(0.5);
+	margin: 0px auto;
+    }
 }
 
 @page cover-front {
