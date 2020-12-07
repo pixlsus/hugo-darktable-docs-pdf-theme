@@ -1,0 +1,12 @@
+{{ $child_pages := union .Sections .Pages }}
+{{ range $child_pages.ByWeight }}
+<div class="section" id="{{ .Page.File.UniqueID }}">
+    <h1 class="title">
+	{{ .Title }}
+    </h1>
+    <div class="content">
+	{{ .Content }}
+    </div>
+    {{ partial "content_recursive.html" . }}
+</div>
+{{ end }}

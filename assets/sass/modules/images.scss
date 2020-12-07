@@ -1,0 +1,28 @@
+img {
+    display: block;
+}
+
+img[alt$='icon'] {
+    width: 30px !important;
+    display: inline;
+}
+
+img[title*='inline']  {
+    display: inline;
+}
+
+img[title*='w25']  {
+    width: 24%;
+}
+
+img[title*='w50']  {
+    width: 48%;
+}
+
+img[title*='w75']  {
+    width: 72%;
+}
+
+img[title*='w100']  {
+    width: 100%;
+}
