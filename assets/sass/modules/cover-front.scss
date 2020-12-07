@@ -1,7 +1,7 @@
 #cover-front {
     page: cover-front;
     break-after: always;
-    padding-top: 50%;
+    padding-top: 35%;
     height: 11in;
     width: 8.5in;
     .title {
@@ -14,6 +14,7 @@
 	display: block;
 	transform: scale(0.5);
 	margin: 0px auto;
+	margin-bottom: -10rem;
     }
 }
 
