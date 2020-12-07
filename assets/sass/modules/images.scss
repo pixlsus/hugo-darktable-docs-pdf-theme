@@ -1,28 +1,29 @@
 img {
     display: block;
+    max-width: 100%;
 }
 
-img[alt$='icon'] {
+.icon {
     width: 30px !important;
     display: inline;
 }
 
-img[title*='inline']  {
+.inline {
     display: inline;
 }
 
-img[title*='w25']  {
+.w25 {
     width: 24%;
 }
 
-img[title*='w50']  {
+.w50 {
     width: 48%;
 }
 
-img[title*='w75']  {
+.w75 {
     width: 72%;
 }
 
-img[title*='w100']  {
+.w100 {
     width: 100%;
 }
