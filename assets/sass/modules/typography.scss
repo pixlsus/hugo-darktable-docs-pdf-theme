@@ -123,4 +123,12 @@
 	max-height: 100%;
     }
 
+    p, li {
+       break-before: avoid;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+       break-after: avoid;
+    }
+
 } // End #body
