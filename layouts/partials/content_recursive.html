@@ -4,9 +4,11 @@
     <h1 class="title">
 	{{ .Title }}
     </h1>
-    <div class="content">
-	{{ .Content }}
-    </div>
+    {{ if gt (countwords .Content) 1 }}
+	<div class="content">
+       {{- .Content -}}
+	</div>
+    {{ end }}
     {{ partial "content_recursive.html" . }}
 </div>
 {{ end }}
