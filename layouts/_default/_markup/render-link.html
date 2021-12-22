@@ -1,8 +1,8 @@
-{{ $link := .Destination }}
+{{ $link := strings.Replace .Destination "_index.md" "" }}
 {{ $isRemote := strings.HasPrefix $link "http" }}
 {{ $isAnchored := strings.HasPrefix $link "#" }}
 {{- if not $isRemote -}}
-{{ $url := urls.Parse .Destination }}
+{{ $url := urls.Parse $link }}
 {{- if $url.Path -}}
 {{ $fragment := "" }}
 {{- with $url.Fragment }}{{ $fragment = printf "#%s" . }}{{ end -}}
