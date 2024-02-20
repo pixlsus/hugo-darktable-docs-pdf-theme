@@ -2,7 +2,7 @@
     <ul>
         {{ range $child_pages.ByWeight }}
             <li>
-                <a href="#{{ .File.UniqueID }}">
+                <a href="#{{ with .File}}{{ .UniqueID }}{{ end }}">
 		    {{ .Title }}
                 </a>
                 {{ partial "toc_recursive.html" . }}

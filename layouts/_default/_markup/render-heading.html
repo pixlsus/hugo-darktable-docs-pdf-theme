@@ -1,1 +1,1 @@
-<h{{ .Level }} id="{{ .Page.File.UniqueID }}#{{ .Anchor | safeURL }}">{{ .Text | safeHTML }}</h{{ .Level }}>
+<h{{ .Level }} id="{{ with .File}}{{ .UniqueID }}{{ end }}#{{ .Anchor | safeURL }}">{{ .Text | safeHTML }}</h{{ .Level }}>
